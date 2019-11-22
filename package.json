@@ -1,17 +1,21 @@
 {
   "name": "webapp-template",
   "version": "1.0.0",
-  "description": "React + Babel + Webpack Template",
+  "description": "react + babel + webpack + eslint template",
   "main": "src/index.jsx",
   "scripts": {
+    "test": "npm run lint",
     "start": "webpack-dev-server --open --config webpack.dev.config.js",
     "build": "webpack --config webpack.prod.config.js",
+    "lint": "eslint --config .eslintrc.yml --ext jsx --ext js src",
+    "lint:fix": "npm run lint -- --fix",
     "update": "ncu"
   },
   "keywords": [
     "react",
     "webpack",
     "babel",
+    "eslint",
     "template"
   ],
   "author": "Felix Breuer",
@@ -26,8 +30,11 @@
     "@babel/plugin-transform-runtime": "^7.6.2",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
+    "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.16.0",
     "html-webpack-plugin": "^3.2.0",
     "npm-check-updates": "^3.2.1",
     "webpack": "^4.41.2",

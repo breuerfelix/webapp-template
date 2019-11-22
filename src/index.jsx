@@ -5,7 +5,7 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 async function test() {
 	await sleep(3000);
-	console.log('hello after 3 seconds')
+	console.log('hello after 3 seconds');
 }
 
 function App() {
@@ -15,8 +15,9 @@ function App() {
 			<button type='button' onClick={test}>click me</button>
 		</div>
 	);
-};
+}
 
 ReactDOM.render(
 	<App />
-, document.getElementById('app'));
+	, document.getElementById('app')
+);
