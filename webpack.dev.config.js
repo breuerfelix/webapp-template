@@ -1,10 +1,13 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.config.js');
+const { getPath } = require('./utils');
 
 const { PORT } = process.env;
 
 module.exports = merge(common, {
+	entry: [ getPath('dev.js'), getPath('src') ],
+
 	mode: 'development',
 	devtool: 'cheap-module-eval-source-map',
 

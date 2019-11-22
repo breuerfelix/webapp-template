@@ -43,5 +43,6 @@ rules:
     - when: 'never'
       spacing:
         objectLiterals: 'never'
-  'react/prop-types': warn
+  'react/prop-types': error
+  'react/no-unused-prop-types': error
   'react/jsx-key': error

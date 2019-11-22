@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Navbar from './navbar';
+
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 async function test() {
@@ -11,6 +13,7 @@ async function test() {
 function App() {
 	return (
 		<div>
+			<Navbar />
 			<p>hello wold</p>
 			<button type='button' onClick={test}>click me</button>
 		</div>

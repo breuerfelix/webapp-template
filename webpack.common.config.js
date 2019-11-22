@@ -3,16 +3,14 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-	entry: [ getPath('src') ],
-
 	performance: { hints: false },
 
 	resolve: {
 		extensions: [ '.js', '.jsx' ],
 		modules: [ 'node_modules', 'src' ],
 		alias: {
-			'react': 'preact-compat',
-			'react-dom': 'preact-compat',
+			'react': 'preact/compat',
+			'react-dom': 'preact/compat',
 		},
 	},
 
