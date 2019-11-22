@@ -1,7 +1,7 @@
 {
   "name": "webapp-template",
   "version": "1.0.0",
-  "description": "react + babel + webpack + eslint template",
+  "description": "preact + babel + webpack + eslint template",
   "main": "src/index.jsx",
   "scripts": {
     "test": "npm run lint",
@@ -12,7 +12,7 @@
     "update": "ncu"
   },
   "keywords": [
-    "react",
+    "preact",
     "webpack",
     "babel",
     "eslint",
@@ -22,8 +22,8 @@
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "preact": "^10.0.5",
+    "preact-compat": "^3.19.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
