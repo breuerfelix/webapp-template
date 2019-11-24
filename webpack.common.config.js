@@ -6,7 +6,7 @@ module.exports = {
 	performance: { hints: false },
 
 	resolve: {
-		extensions: [ '.js', '.jsx' ],
+		extensions: [ '.js', '.jsx', '.ts', '.tsx' ],
 		modules: [ 'node_modules', 'src' ],
 		alias: {
 			'react': 'preact/compat',
@@ -22,7 +22,7 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.jsx?$/,
+				test: /\.(j|t)sx?$/,
 				loader: 'babel-loader',
 			},
 		]

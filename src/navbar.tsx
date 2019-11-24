@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import PropTypes from 'prop-types';
 
-function Navbar(props) {
+function Navbar(props): ReactElement {
 	return (
 		<div>
 			{props.title}

@@ -3,9 +3,12 @@ env:
   browser: true
 plugins:
   - 'react'
+  - '@typescript-eslint'
 extends:
   - 'eslint:recommended'
   - 'plugin:react/recommended'
+  - 'plugin:@typescript-eslint/eslint-recommended'
+  - 'plugin:@typescript-eslint/recommended'
 parser: 'babel-eslint'
 parserOptions:
   ecmaVersion: 2018
@@ -13,6 +16,9 @@ parserOptions:
   ecmaFeatures:
     jsx: true
     legacyDecorators: true
+settings:
+  react:
+    version: '16'
 rules:
   'indent':
     - error
