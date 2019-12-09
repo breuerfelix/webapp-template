@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import ReactDOM from 'react-dom';
 
-import Navbar from './navbar';
+import Navbar from 'navbar';
 
 const sleep = (ms): Promise<void> => new Promise(resolve => setTimeout(resolve, ms));
 
